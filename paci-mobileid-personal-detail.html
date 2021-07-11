@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Ooredoo - Services</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <link rel='stylesheet' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
+  <!--/* -- Brand Favicon -- */-->
+  <link rel="shortcut icon" href="assets/images/favicon.ico" />
+  <!--/* -- bootstrap CSS V v4.3.1 -- */-->
+  <link rel="stylesheet" href="assets/css/global/bootstrap.min.css">
+  <!--/* -- Swiper CSS V 4.4.1 -- */-->
+  <link rel="stylesheet" href="assets/css/global/swiper.min.css">
+  <!--/* -- Font Awesome Free V 5.3.1 -- */-->
+  <link rel="stylesheet" href="assets/css/global/fontawesome-all.min.css">
+  <!--/* -- Custom CSS V 1.0 -- */-->
+  <link rel="stylesheet" href="assets/css/customv2.css">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+      <!--  Section - PACI Mobile ID and Postpaid Onboarding Starts -->
+      <section class="kws-videotext-section">
+        <div class="container">
+
+            <div class="paci-mobile-onboarding-section mt-5">
+                <div class="ivpnunber-checkout-flow">
+                  <div class="main-section-mb-160">
+
+                    <div class="d-flex vipnumber-title mb-4">
+                        <div class="mr-auto mt-1">
+                            <label>Personal Details</label>
+                            <p>Please complete the form</p>
+                        </div>
+
+                    </div>
+
+                    <div class="checkout-flow">
+                    <div class="textfiled">
+                          <p class="kws-suptxt-small required">First Name </p>
+                          <input type="text" class="form-control">                 
+                     </div>
+
+                     <div class="textfiled">
+                          <p class="kws-suptxt-small required">Last Name </p>
+                          <input type="text" class="form-control">                         
+                     </div>
+
+                     <div class="textfiled">
+                        <p class="kws-suptxt-small required">Civil ID Number/Passport </p>
+                        <input type="text" class="form-control">                         
+                   </div>
+
+                   <div class="textfiled">
+                     <div class="row">
+                       <div class="col-6">
+                        <p class="kws-suptxt-small required">Expiration date </p>
+                        <input type="text" class="form-control icon-filters_amenities">
+                       </div>
+                       <div class="col-6">
+                        <p class="kws-suptxt-small required">Date of Birth </p>
+                        <input type="text" class="form-control icon-filters_amenities">
+                       </div>
+                     </div>
+                  </div>
+
+                  <div class="textfiled">
+                    <p class="kws-suptxt-small required">Email </p>
+                    <input type="text" class="form-control">
+                  </div>
+
+                  <div class="textfiled">
+                    <div class="agile-field-txt">
+                      <p class="kws-suptxt-small">Nationality </p>
+                        <select class="styled-select">
+                        <option value=""></option>
+                        <option value="A">Indian</option>
+                        <option value="B">Department B</option>
+                        <option value="C">Department C</option>
+                        <option value="D">Department D</option>
+                        <option value="E">Department E</option>
+                        </select>
+                        </div> 
+                  </div>
+
+                  <div class="textfiled">
+                    <p class="kws-suptxt-small">Gender </p>
+                    <div class="d-flex vip-number-radiobtn vip-number-gender">
+                        <div class="radio-inline control-label radiobtnsec gernder-sec">
+                         <label class="radiobtn"><input type="radio" name="radio"> <span class="checkmark"></span></label> Male
+                        </div>
+                        <div class="radio-inline control-label radiobtnsec gernder-sec">
+                         <label class="radiobtn"><input type="radio" name="radio"> <span class="checkmark"></span></label> Female
+                        </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                
+                <!--:::::file uploading section st:::::-->
+                <div class="textfiled okw-file-uploadsection">
+                 
+
+                  <div class="file-upload agile-field-txt">
+                    <p class="kws-suptxt-small"> Civil ID (Front side)*</p>
+                    <!--button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button-->
+                    <div class="image-upload-wrap">
+                      <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                      <div class="drag-text">
+                       <div class="file-upload-img-icon"><img src="assets/paci-mobileid-images/photo-camera.svg" alt="" title=""></div>
+                      </div>
+                    </div>
+                    <div class="file-upload-content">
+                      <div class="row pad0px">
+                        <div class="col-4 col-md-4">
+                        <img class="file-upload-image" src="#" alt="your image" />
+                      </div>
+                        <div class="col-8 col-md-8 image-title-wrap text-right">
+                          <button type="button" onclick="removeUpload()" class="remove-image">  
+                            <span class="image-title"> Uploaded Image </span>
+                            <img src="assets/paci-mobileid-images/delete-icon.svg" title="" alt=""> Delete
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="note-text mt-1">JPG, JPEG, PNG format</p>
+                  </div>
+                  
+                  <div class="file-upload agile-field-txt">
+                    <p class="kws-suptxt-small"> Civil ID (Back side)* </p>
+                    <div class="image-upload-wrap">
+                      <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                      <div class="drag-text">
+                       <div class="file-upload-img-icon"><img src="assets/paci-mobileid-images/photo-camera.svg" alt="" title=""></div>
+                      </div>
+                    </div>
+                    <div class="file-upload-content">
+                      <div class="row pad0px">
+                      <div class="col-4 col-md-4">
+                      <img class="file-upload-image" src="#" alt="your image" />
+                    </div>
+                      <div class="col-8 col-md-8 image-title-wrap text-right">
+                        <button type="button" onclick="removeUpload()" class="remove-image"> 
+                          <span class="image-title"> Uploaded Image </span>
+                          <img src="assets/paci-mobileid-images/delete-icon.svg" title="" alt=""> Delete
+                        </button>
+                      </div>
+                    </div>
+                    </div>
+                    <p class="note-text mt-1">JPG, JPEG, PNG format</p>
+                  </div>
+
+                </div>
+                <!--:::::file uploading section end:::::-->
+
+              </div>
+
+                  <div class="clerfix"></div>
+                  <div class="fotter-buttonsec border-top1px">
+
+                    <div class="">
+                      <div class="mr-auto paylabel vip-color-black">
+                      <div class="pr-2 mr-auto vipnumber-type rowsecnew">
+                          <div>
+                              <img src="assets/paci-mobileid-images/Receipt-icon-Minutes.svg" title="" alt="">
+                          </div>
+                        <div class="pr-2 mr-auto">
+                            <div class="rowsecnew">
+                            <p>
+                              <label>Shamel 5 eShop Exclusive</label><br>
+                              Total: KD 5/month<br>
+                          </p>
+                      </div>
+                      </div>
+                      </div>
+                      </div>
+                  </div>
+                  <div class="clerfix"></div>
+                    <div class="d-flex">
+                    <a href="paci-mobile-id-check.html" class="btn btn-secondary mr-auto">Back</a>
+                    <a href="paci-mobile-id-delivery-address.html" class="btn btn-primary ml-auto">Continue</a>
+                    </div>
+
+                  </div>
+
+                </div>
+            </div>
+
+          </div>
+      </section>
+      <!--  Section - PACI Mobile ID and Postpaid Onboarding ends -->
+
+  </div>
+
+
+  <!--/* -- jQuery JS V 3.3.1 -- */-->
+  <script type="text/javascript" src="assets/js/global/jquery-3.3.1.min.js"></script>
+  <!--/* -- bootstrap JS Bundle V v4.3.1 -- */-->
+  <script type="text/javascript" src="assets/js/global/bootstrap.bundle.min.js"></script>
+  <!--/* -- Swiper JS V 4.4.1 -- */-->
+  <script type="text/javascript" src="assets/js/global/swiper.min.js"></script>
+  <!--/* -- Custom script - ooredoo-scriptsv2 - */-->
+  <script type="text/javascript" src="assets/js/ooredoo-scriptsv2.js"></script>
+
+  <!--:::::file uploading section st:::::-->
+  <script>
+    function readURL(input) {
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+    reader.onload = function(e) {
+      $('.image-upload-wrap').hide();
+      $('.file-upload-image').attr('src', e.target.result);
+      $('.file-upload-content').show();
+      $('.image-title').html(input.files[0].name);
+    };
+    reader.readAsDataURL(input.files[0]);
+  } else {
+    removeUpload();
+  }
+  }
+function removeUpload() {
+  $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+  $('.file-upload-content').hide();
+  $('.image-upload-wrap').show();
+}
+  $('.image-upload-wrap').bind('dragover', function () {
+	$('.image-upload-wrap').addClass('image-dropping');
+});
+	$('.image-upload-wrap').bind('dragleave', function () {
+	$('.image-upload-wrap').removeClass('image-dropping');
+});
+</script>
+<!--:::::file uploading section end:::::-->
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+    
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    
+
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <script>
+        let mySwiper = new Swiper('.swiper-container', {
+
+        direction: 'horizontal',
+        slidesPerView: 4,
+        spaceBetween: 30,
+        loop: true,
+        allowTouchMove: false,
+        speed: 600,
+        
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+    
+    });
+    $(function() {
+        $(window).resize(function() {
+            let windowWidth = $(window).width();
+            if (windowWidth <= 750) {
+                mySwiper.slidesPerView = 3;
+            }
+        });
+    });
+    </script>
+
+    <!-- jQuery JS V 3.3.1 -->
+  <script type="text/javascript" src="assets/js/global/jquery-3.3.1.min.js"></script>
+  <!-- bootstrap JS Bundle V v4.3.1 -->
+  <script type="text/javascript" src="assets/js/global/bootstrap.bundle.min.js"></script>
+  <!-- Swiper JS V 4.4.1 -->
+  <script type="text/javascript" src="assets/js/global/swiper.min.js"></script>
+  <!-- Custom script - ooredoo-scriptsv2 -->
+  <script type="text/javascript" src="assets/js/ooredoo-scriptsv2.js"></script>
+</body>
+</html>
